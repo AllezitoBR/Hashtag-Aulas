@@ -32,10 +32,8 @@ pyautogui.click(x=659, y=577)
 # 4. abrir/importar base de dados para cadastrar
 # 4.1 instalar bibliotecas para planilhas -> pip install pandas numpy openpyxl 
 import pandas as pd
-import numpy
-import openpyxl
 
-tabela = pd.read_csv("produtos.csv")
+tabela = pd.read_csv("C:\Users\Alle_\OneDrive\Documentos\Python PowerUp\Aula 1\produtos.csv")
 
 # 5. cadastrar um produto  
 # str = string = texto
