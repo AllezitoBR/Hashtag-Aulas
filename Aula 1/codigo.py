@@ -4,7 +4,7 @@
 import pyautogui
 import time
 
-pyautogui.PAUSE = 0.6
+pyautogui.PAUSE = 0.5
 
 # pyautogui.click -> clicar com o mouse
 # pyautogui.write -> escrever com o teclado
@@ -21,7 +21,7 @@ pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
 pyautogui.press("enter")
 
 # 2.1 tempo de carregamento para garantir a abertura do site completo
-time.sleep(5) 
+time.sleep(3) 
 
 # 3. fazer login
 pyautogui.click(x=449, y=410)
