@@ -1,11 +1,10 @@
-# PASSO A PASSO PROJETO
+# PASSO A PASSO PROJETO 
 
 # biblioteca para automatizar teclado, mouse e tela)
-import pyautogui 
+import pyautogui
 import time
 
-
-pyautogui.PAUSE = 0.4
+pyautogui.PAUSE = 0.5
 
 # pyautogui.click -> clicar com o mouse
 # pyautogui.write -> escrever com o teclado
@@ -18,11 +17,11 @@ pyautogui.write ("chrome")
 pyautogui.press ("enter")
 
 # 2. entrar no sistema
-pyautogui.write ("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
-pyautogui.press ("enter")
+pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
+pyautogui.press("enter")
 
 # 2.1 tempo de carregamento para garantir a abertura do site completo
-time.sleep(3) 
+time.sleep(5) 
 
 # 3. fazer login
 pyautogui.click(x=449, y=410)
@@ -43,7 +42,7 @@ tabela = pd.read_csv("produtos.csv")
 for linha in tabela.index: 
     codigo = str(tabela.loc[linha, "codigo"])
     # 5.1 clicar no campo produto
-    pyautogui.click(494, y=293)
+    pyautogui.click(x=392, y=292)
     # 5.2 digitar o produto   
     pyautogui.write(codigo)
     # passar para proximo campo
