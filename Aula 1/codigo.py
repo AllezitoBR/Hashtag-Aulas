@@ -4,7 +4,7 @@
 import pyautogui
 import time
 
-pyautogui.PAUSE = 0.5
+pyautogui.PAUSE = 0.6
 
 # pyautogui.click -> clicar com o mouse
 # pyautogui.write -> escrever com o teclado
@@ -33,7 +33,7 @@ pyautogui.click(x=659, y=577)
 # 4.1 instalar bibliotecas para planilhas -> pip install pandas numpy openpyxl 
 import pandas as pd
 
-tabela = pd.read_csv("C:\Users\Alle_\OneDrive\Documentos\Python PowerUp\Aula 1\produtos.csv")
+tabela = pd.read_csv("produtos.csv")
 
 # 5. cadastrar um produto  
 # str = string = texto
