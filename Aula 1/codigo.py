@@ -3,12 +3,13 @@
 # biblioteca para automatizar teclado, mouse e tela)
 import pyautogui
 import time
+import pandas as pd
 
 pyautogui.PAUSE = 0.5
 
 # pyautogui.click -> clicar com o mouse
 # pyautogui.write -> escrever com o teclado
-# pyautogui.press -> pressionar uma tecla do teclado
+# pyautogui.prMOLO000192ess -> pressionar uma tecla do teclado
 # pyautogui.hotkey -> apertar um conjunto de teclas (ctrl c, Alt Tab)
 
 # 1. abrir o navegador
@@ -18,20 +19,19 @@ pyautogui.press ("enter")
 
 # 2. entrar no sistema
 pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
-pyautogui.press("enter")
+pyautogui.press("enter") 
 
 # 2.1 tempo de carregamento para garantir a abertura do site completo
-time.sleep(3) 
+time.sleep(5) 
 
 # 3. fazer login
-pyautogui.click(x=449, y=410)
+pyautogui.click(x=526, y=351)
 pyautogui.write("alle_andrade123@hotmail.com")
 pyautogui.press("tab")
 pyautogui.write("12345")
-pyautogui.click(x=659, y=577)
+pyautogui.click(x=691, y=487)
 # 4. abrir/importar base de dados para cadastrar
 # 4.1 instalar bibliotecas para planilhas -> pip install pandas numpy openpyxl 
-import pandas as pd
 
 tabela = pd.read_csv("produtos.csv")
 
@@ -40,7 +40,7 @@ tabela = pd.read_csv("produtos.csv")
 for linha in tabela.index: 
     codigo = str(tabela.loc[linha, "codigo"])
     # 5.1 clicar no campo produto
-    pyautogui.click(x=392, y=292)
+    pyautogui.click(x=473, y=255)
     # 5.2 digitar o produto   
     pyautogui.write(codigo)
     # passar para proximo campo
